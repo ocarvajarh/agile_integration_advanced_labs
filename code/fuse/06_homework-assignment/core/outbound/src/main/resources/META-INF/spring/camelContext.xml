@@ -38,7 +38,7 @@
                 <handled>
                     <constant>true</constant>
                 </handled>
-                <to id="_to1" uri="activemqService:queue:q.empi.nextgate.dlq"/>
+                <to id="_to1" pattern="InOnly" uri="activemqService:queue:q.empi.nextgate.dlq"/>
             </onException>
             <to id="_to-1" uri="{{nextgate.url}}"/>
         </route>
